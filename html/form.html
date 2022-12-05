@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>Point 2</title>
+</head>
+<body>
+	<!-- Insertar logo -->
+	<a onclick="alerta()" href="./index.html">
+		<img class="logo" src="../img/pato.png" alt="logo">
+		<script>
+			function alerta() {
+				alert ("la paz nunca fue una opcion");
+			}
+		</script>
+	</a>
+
+	<!-- Formulario -->
+	<form class="form" id="form">
+		<div>
+			<label for="name">Nombre</label>
+			<input autocomplete="off" id="name" type="text" placeholder="Ingresa el nombre">
+		</div>
+		<div>
+			<label for="last-name">Apellido</label>
+			<input autocomplete="off" id="last-name" type="text" placeholder="Ingresa el apellido">
+		</div>
+		<div>
+			<label for="adress">Dirección</label>
+			<input autocomplete="off" id="adress" type="text" placeholder="Ingresa la direccion">
+		</div>
+		<div>
+			<label for="phone">Telefono</label>
+			<input autocomplete="off" id="phone" type="number" placeholder="000-000-0000">
+		</div>
+		<div>
+			<label for="password">Contraseña</label>
+			<input id="password" type="password" placeholder="*****">
+		</div>
+		<div>
+			<label for="man">
+				<input id="man" type="radio" name="gender">Paisano
+			</label>
+		</div>
+		<div>
+			<label for="woman">
+				<input id="woman" type="radio" name="gender">Dama
+			</label>
+			
+		</div>
+		
+		<p class="message inactive" id="success">Le formulaire a été enregistré et soumis au serveur avec succès</p>
+		<p class="message inactive" id="fail">Désolé, vous n’avez pas rempli les champs</p>
+
+		<div>
+			<input type="button" value="Submit" onclick="validar()">
+			<input type="reset" value="Reset" onclick="reset()">
+		</div>
+	</form>
+
+	<script src="../js/form.js"></script>
+</body>
+</html>

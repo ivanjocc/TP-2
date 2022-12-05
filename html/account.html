@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/account.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>Account $$$</title>
+</head>
+<body>
+	<!-- Insertar logo -->
+	<a onclick="alerta()" href="./index.html">
+		<img class="logo" src="../img/pato.png" alt="logo">
+		<script>
+			function alerta() {
+				alert ("la paz nunca fue una opcion");
+			}
+		</script>
+	</a>
+
+	<!-- Contenedores -->
+	<form class="form" id="form">
+		<div class="container">
+			<input class="balance" id="balance" type="number" style="width: 30%; display: flex; margin: 0 auto; text-align: center;" value="25000">
+			<div class="container-child">
+				<input class="debit child" id="debit" type="number">
+				<input class="credit child" id="credit" type="number">
+				<input type="button" value="+" id="plus" onclick="sumar()">
+				<input type="button" value="-" id="minus" onclick="restar()">
+			</div>
+			<input type="reset" value="Reset" style="display: flex; margin: 0 auto; width: 20%; justify-content: center; margin-top: 50px">
+		</div>
+	</form>
+
+	<script src="../js/account.js"></script>
+</body>
+</html>

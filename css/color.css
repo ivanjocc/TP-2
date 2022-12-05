@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background-color: aqua;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+	background-color: aqua;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.container {
+	/* width: 80%; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container-child {
+	justify-content: center;
+	width: 500px;
+	margin: 20px auto;
+	border: 3px double black;
+	text-align: justify;
+	cursor: pointer;
+	padding: 10px 10px;
+	transition: all ease .8s;
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+
+.violet {
+	color: violet;
+}

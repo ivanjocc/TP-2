@@ -9,25 +9,38 @@
 	<title>Account $$$</title>
 </head>
 <body>
-	<!-- Insertar logo -->
-	<a onclick="alerta()" href="../index.html">
-		<img class="logo" src="../img/pato.png" alt="logo">
-		<script>
-			function alerta() {
-				alert ("la paz nunca fue una opcion");
-			}
-		</script>
-	</a>
+	<!-- Barra navegacion -->
+	<nav class="nav">
+		<a href="">
+			<h1>HOME</h1>
+		</a>
+
+		<ul class="nav-bar">
+			<li class="nav-bar__item">
+				<a class="nav-bar__item-link" href="">point 1</a>
+			</li>
+			<li class="nav-bar__item">
+				<a class="nav-bar__item-link" href="">point 2</a>
+			</li>
+			<li class="nav-bar__item">
+				<a class="nav-bar__item-link" href="">point 3</a>
+			</li>
+			<li class="nav-bar__item">
+				<a class="nav-bar__item-link" href="">point 4</a>
+			</li>
+		</ul>
+	</nav>
 
 	<!-- Contenedores -->
 	<form class="form" id="form">
 		<div class="container">
+			<h1 style="display: block; text-align: center;">Saldo:</h1>
 			<input class="balance" id="balance" type="number" style="width: 30%; display: flex; margin: 0 auto; text-align: center;" value="25000">
 			<div class="container-child">
 				<input class="debit child" id="debit" type="number">
 				<input class="credit child" id="credit" type="number">
-				<input type="button" value="+" id="plus" onclick="sumar()">
-				<input type="button" value="-" id="minus" onclick="restar()">
+				<input type="button" value="Debito" id="plus" onclick="sumar()">
+				<input type="button" value="Credito" id="minus" onclick="restar()">
 			</div>
 			<input type="reset" value="Reset" style="display: flex; margin: 0 auto; width: 20%; justify-content: center; margin-top: 50px">
 		</div>
